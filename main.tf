@@ -51,4 +51,13 @@ resource "aws_instance" "vm1" {
     "Name" = "test"
   }
 }
-  
+
+resource "aws_s3_bucket" "b5" {
+  bucket = "bucket-import-09082024"
+}
+
+
+import {
+  to = aws_s3_bucket.b5
+  id = "bucket-import-09082024"
+}
