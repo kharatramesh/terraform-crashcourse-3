@@ -38,6 +38,11 @@ resource "aws_s3_bucket" "b2" {
 resource "aws_s3_bucket" "b3" {
   bucket = "tc-bucket3-090824"
 }
+
+resource "aws_s3_bucket" "b4" {
+  bucket = "tc-bucket4-090824"
+}
+
 resource "aws_instance" "vm1" {
 
   ami = "ami-025fe52e1f2dc5044"
