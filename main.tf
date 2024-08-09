@@ -20,7 +20,7 @@ terraform {
     hostname = "app.terraform.io"
 
     workspaces {
-      tags = ["samosa"]
+      tags = ["vadapav"]
     }
   }
 }
